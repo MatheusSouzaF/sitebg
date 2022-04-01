@@ -15,14 +15,14 @@ class ConteudoAux extends React.Component {
 	render () {
 
 		return (
-			<div className="conteudoAux p-5">
-				<div className="container-fluid row">
-					<div className="col-12 col-sm-5">
+			<div className="container-fluid conteudoAux" align="center">
+				<div className="container-lg row align-items-center">
+					<div className="col-12 col-sm-6">
 						<img src={nossosClientes}></img>
-						<p className="mb-0">NOSSOS</p>
-						<p className="fontType-ExtraBold">CLIENTES</p>
+						<p className="mb-0 fs-2 mb-0 p-0">NOSSOS</p>
+						<p className="fontType-ExtraBold fs-3 mt-0 p-0">CLIENTES</p>
 					</div >
-					<div className="row col-12 col-sm-6 my-3">
+					<div className="row col-12 col-sm-6 my-4">
 						<div className="row">
 							<div className="col-4">
 								<img src={abor} width='140vh'></img>
