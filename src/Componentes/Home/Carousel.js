@@ -62,5 +62,5 @@ class CarouselPag extends React.Component {
 		)
 	}
 }
-$('#mainSlider').on('slide.bs.carousel', function () { console.log('teste')})
+// $('#mainSlider').on('slide.bs.carousel', function () { console.log('teste')})
 export default CarouselPag

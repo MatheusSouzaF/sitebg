@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'reactstrap';
 
 // Imagens
 import nossosClientes from '../../imagens/ICON_CLIENTES.png'
