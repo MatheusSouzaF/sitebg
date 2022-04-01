@@ -18,9 +18,9 @@ class ConteudoAux extends React.Component {
 			<div className="container-fluid conteudoAux" align="center">
 				<div className="container-lg row align-items-center">
 					<div className="col-12 col-sm-6">
-						<img src={nossosClientes}></img>
-						<p className="mb-0 fs-2 mb-0 p-0">NOSSOS</p>
-						<p className="fontType-ExtraBold fs-3 mt-0 p-0">CLIENTES</p>
+						<img src={nossosClientes} width="23%"></img>
+						<p className="mb-0 mt-1 fs-2">NOSSOS</p>
+						<p className="fontType-ExtraBold fs-3">CLIENTES</p>
 					</div >
 					<div className="row col-12 col-sm-6 my-4">
 						<div className="row">
@@ -34,7 +34,7 @@ class ConteudoAux extends React.Component {
 								<img src={redeBellas} width='140vh'></img>
 							</div>
 						</div>
-						<div className="row my-2">
+						<div className="row mt-2">
 							<div className="col-4">
 								<img src={cdBbo} width='140vh'></img>
 							</div>

@@ -11,11 +11,11 @@ function Home() {
       <header className='EstiloDefault'>
         <Topo></Topo>
       </header>
-      <article className='EstiloDefault'>
+      <main className='EstiloDefault'>
         <Conteudo></Conteudo>
         <ConteudoAux></ConteudoAux>
         <Carousel></Carousel>
-      </article>
+      </main>
       <footer className='EstiloDefault'>
         <Rodape></Rodape>
       </footer>

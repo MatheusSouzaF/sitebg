@@ -13,7 +13,7 @@ class Rodape extends React.Component {
 					<div className="col-3 border-end border-white">
 						<div className="p-4">
 							<Link to="/">
-								<img src={logoBranco} width="200vh" verticalAlign="center"></img>
+								<img src={logoBranco} width="200vh"></img>
 							</Link>
 						</div>
 					</div>
@@ -24,7 +24,7 @@ class Rodape extends React.Component {
 							<a href="https://democratize.com.br" 	className="link-branco">SIM			</a>
 						</div>
 					</div>
-					<div className="col-6" align="left">
+					<div className="col-6 px-4" align="left">
 						<p className="my-0">Avenida Getúlio Vargas, 221 - Sala 703</p>
 						<p className="my-0">Centro - Araruama | CEP: 28979-129</p>
 						<p className="my-0">contato@bgstudios.com.br</p>

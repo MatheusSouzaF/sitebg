@@ -7,6 +7,11 @@
 	font-family:	'Montserrat-ExtraBold' ;
 	src: url('./Fontes/Montserrat-ExtraBold_0.ttf');
 }
+@font-face {
+	font-family:	'Montserrat-Bold' ;
+	src: url('./Fontes/Montserrat-Bold_0.ttf');
+}
+
 
 .EstiloDefault {
 	font-family: Montserrat, sans-serif;
@@ -14,6 +19,9 @@
 
 .fontType-ExtraBold {
 	font-family: Montserrat-ExtraBold, sans-serif;
+}
+.fontType-Bold {
+	font-family: Montserrat-Bold, sans-serif;
 }
 
 .botaoPadrao {

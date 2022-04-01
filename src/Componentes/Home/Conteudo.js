@@ -25,7 +25,7 @@ class Conteudo extends React.Component {
 					<p></p>
 				</div>
 				<div className="col-sm-6">
-					<video autoPlay src={animacao} width="95%"></video>
+					<video autoPlay muted src={animacao} width="95%"></video>
 				</div>
 			</div>
 		)
