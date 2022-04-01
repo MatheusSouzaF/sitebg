@@ -1,0 +1,53 @@
+
+@font-face {
+	font-family:	'Montserrat' ;
+	src: url('./Fontes/Montserrat-Regular_0.ttf');
+}
+@font-face {
+	font-family:	'Montserrat-ExtraBold' ;
+	src: url('./Fontes/Montserrat-ExtraBold_0.ttf');
+}
+
+article {
+	min-height: 100vh;
+}
+
+.EstiloDefault {
+	font-family: Montserrat, sans-serif;
+}
+
+.fontType-ExtraBold {
+	font-family: Montserrat-ExtraBold, sans-serif;
+}
+
+.botaoPadrao {
+	background-color: #e5b54a  !important;
+	width: 140px !important;
+	color: #383330  !important;
+	font-weight: 600 !important;
+	border: none !important;
+	font-size: 15pt !important;
+	
+}
+.botaoPadrao:hover {
+	background-color: #cea244  !important;
+	color: #383330  !important;
+}
+.conteudoAux {
+	background-color: #efefef !important;
+}
+.rodape {
+	background-color: #e5b54a;
+	color: #ffffff;
+}
+.rodape-borda {
+	border-right: 1px solid #ffffff ;
+	min-height: 120px;
+}
+.link-branco {
+	color: #ffffff;
+	text-decoration: none;
+}
+.link-branco:hover {
+	color: #ebebeb
+}
