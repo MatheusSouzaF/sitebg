@@ -3,7 +3,7 @@ import logoBranco from '../imagens/LOGO_BG_W.png'
 import { Link } from 'react-router-dom';
 
 
-class Topo extends React.Component {
+class Rodape extends React.Component {
 
 	render () {
 
@@ -36,4 +36,4 @@ class Topo extends React.Component {
 	}
 }
 
-export default Topo
+export default Rodape

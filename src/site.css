@@ -8,10 +8,6 @@
 	src: url('./Fontes/Montserrat-ExtraBold_0.ttf');
 }
 
-article {
-	min-height: 100vh;
-}
-
 .EstiloDefault {
 	font-family: Montserrat, sans-serif;
 }
@@ -22,11 +18,11 @@ article {
 
 .botaoPadrao {
 	background-color: #e5b54a  !important;
-	width: 140px !important;
+	width: 120px !important;
 	color: #383330  !important;
 	font-weight: 600 !important;
 	border: none !important;
-	font-size: 15pt !important;
+	font-size: 13pt !important;
 	
 }
 .botaoPadrao:hover {
@@ -39,10 +35,6 @@ article {
 .rodape {
 	background-color: #e5b54a;
 	color: #ffffff;
-}
-.rodape-borda {
-	border-right: 1px solid #ffffff ;
-	min-height: 120px;
 }
 .link-branco {
 	color: #ffffff;

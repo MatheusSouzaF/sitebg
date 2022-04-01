@@ -12,7 +12,7 @@ import tabletDemocratize from '../../imagens/TABLET_DEMOCRATIZE.png'
 import logoDemocratize from '../../imagens/LOGO_DEMOCRATIZE.png'
 import { Link } from 'react-router-dom';
 
-class Topo extends React.Component {
+class Conteudo extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -21,7 +21,7 @@ class Topo extends React.Component {
 		return (
 			<div className="container-fluid my-3 row">
 				<div className="col-sm-6">
-					<p className="fs-1 fontType-ExtraBold"><strong>Inovando com tecnologia para melhores negócios</strong></p>
+					<p className="fs-1 fontType-ExtraBold"><strong>Inovando com tecnologia para melhores negócios </strong></p>
 					<p></p>
 				</div>
 				<div className="col-sm-6">
@@ -54,7 +54,7 @@ class Topo extends React.Component {
 					</div>
 					<div className="col-12 col-me-auto col-sm-6">
 						<img src={tiroDigital} width="200px"></img> 
-						<p className="fs-5">O tiro.digital surgiu no intuito de revolucionar o mundo do tiro. Com tecnologia de ponta para o controle e gestão de Clubes, lojas de armas, IATS e psicólogos. Tendo como principal objetivo de desburocratizar e automatizar os processos que envolvem o tiro no Brasil.</p>
+						<p className="fs-6">O tiro.digital surgiu no intuito de revolucionar o mundo do tiro. Com tecnologia de ponta para o controle e gestão de Clubes, lojas de armas, IATS e psicólogos. Tendo como principal objetivo de desburocratizar e automatizar os processos que envolvem o tiro no Brasil.</p>
 						<a href="https://tiro.digital">
 							<Button className='botaoPadrao'>Ver mais</Button>
 						</a>
@@ -68,7 +68,7 @@ class Topo extends React.Component {
 			<div className="row my-3">
 				<div className="col-12 col-sm-6">
 					<img src={logoSIM} width="35%"></img>
-					<p className="text-end fs-5">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</p>
+					<p className="text-end fs-6">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</p>
 					<a href="https://sim.med.br">
 						<Button className='botaoPadrao'>Ver mais</Button>
 					</a>
@@ -87,7 +87,7 @@ class Topo extends React.Component {
 				</div>
 				<div className="col-12 col-sm-6">
 					<img src={logoDemocratize} width="70%"></img>
-					<p className="fs-5"> O Democratize nasceu em 2018, época em que passou a ser permitido o Financiamento Coletivo para candidatos arrecadarem fundo para suas campanhas eleitorais. Crowdfunding Eleitoral é a nossa especialidade. Fizemos história e aprimoramos nossa plataforma para oferecer muito além da errecadação nas eleições.</p>
+					<p className="fs-6"> O Democratize nasceu em 2018, época em que passou a ser permitido o Financiamento Coletivo para candidatos arrecadarem fundo para suas campanhas eleitorais. Crowdfunding Eleitoral é a nossa especialidade. Fizemos história e aprimoramos nossa plataforma para oferecer muito além da errecadação nas eleições.</p>
 					<a href="https://democratize.com.br">
 						<Button className='botaoPadrao'>Ver mais</Button>
 					</a>
@@ -120,4 +120,4 @@ class Topo extends React.Component {
 	}
 }
 
-export default Topo
+export default Conteudo
