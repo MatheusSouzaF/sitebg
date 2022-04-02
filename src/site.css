@@ -31,7 +31,7 @@
 	font-weight: 600 !important;
 	border: none !important;
 	font-size: 13pt !important;
-	
+	text-decoration: none !important;
 }
 .botaoPadrao:hover {
 	background-color: #cea244  !important;
