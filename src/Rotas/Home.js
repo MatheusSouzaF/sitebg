@@ -7,6 +7,7 @@ import Rodape from '../Componentes/Rodape'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Montserrat from '../Fontes/Montserrat-Regular_0.ttf'
+import CssBaseline from '@mui/material/CssBaseline';
 
 const theme = createTheme({
   typography: {
@@ -36,20 +37,21 @@ const theme = createTheme({
 function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth='fluid'>
+      <CssBaseline />
         <header>
-          {/* <Topo /> */}
+          <Topo />
         </header>
-        <Container>
-          <main>
+        <main>
+          <Container maxWidth='xl'>
             <Conteudo />
 
-          </main>
-        </Container>
+          </Container>
+          <ConteudoAux />
+          <Carousel />
+        </main>
         <footer>
-          {/* <Rodape /> */}
+          <Rodape />
         </footer>
-      </Container>
     </ThemeProvider>
   );
 }
