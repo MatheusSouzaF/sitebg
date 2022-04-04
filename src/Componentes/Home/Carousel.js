@@ -7,8 +7,13 @@ import ortoPremium from '../../imagens/EVENTOS/ORTO_PREMIUM.png'
 import simposioICES from '../../imagens/EVENTOS/SIMPÓSIO_ICES.png'
 
 // Material UI
-import Carousel from 'react-material-ui-carousel'
 import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+
+
+// Carousel
+import Carousel from 'react-material-ui-carousel'
+
 
 
 
@@ -22,12 +27,8 @@ class CarouselPag extends React.Component {
 
 		return (
 			<Container>
-				{/* <Carousel
-					animation="slide"
-					indicators={false}
-				>
-
-				</Carousel> */}
+					<Carousel>
+					</Carousel>
 			</Container>
 
 			// <div className="container-lg my-3">
