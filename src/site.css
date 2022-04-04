@@ -12,18 +12,6 @@
 	src: url('./Fontes/Montserrat-Bold_0.ttf');
 }
 
-
-.EstiloDefault {
-	font-family: Montserrat, sans-serif;
-}
-
-.fontType-ExtraBold {
-	font-family: Montserrat-ExtraBold, sans-serif;
-}
-.fontType-Bold {
-	font-family: Montserrat-Bold, sans-serif;
-}
-
 .botaoPadrao {
 	background-color: #e5b54a  !important;
 	width: 120px !important;
@@ -31,23 +19,35 @@
 	font-weight: 600 !important;
 	border: none !important;
 	font-size: 13pt !important;
-	text-decoration: none !important;
+	border-radius: 10px !important;
 }
 .botaoPadrao:hover {
 	background-color: #cea244  !important;
 	color: #383330  !important;
 }
-.conteudoAux {
-	background-color: #efefef !important;
-}
-.rodape {
-	background-color: #e5b54a;
-	color: #ffffff;
-}
+
 .link-branco {
 	color: #ffffff;
 	text-decoration: none;
 }
 .link-branco:hover {
 	color: #ebebeb
+}
+
+@media(max-width: 900px ) {
+	.ocultarQuandoPequeno {
+		display: none;
+		
+	}
+	.seMobileCentralizar {
+		text-align: center !important;
+		align-self: center !important;
+		align-content: center !important;
+	}
+}
+
+@media(min-width: 900px ) {
+	.ocultarQuandoGrande {
+		display: none;
+	}
 }

@@ -16,36 +16,11 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 
-const temaTopo = createTheme({
-	typography: {
-	  titulo: {
-		fontSize: "35pt",
-	  },
-	  body1: {
-		fontWeight: 500,
-	  },
+// Tema
+import tema from '../Tema';
 
-	},
-});
-
-
-const temaSecundario = createTheme({
-	typography: {
-		titulo: {
-			fontSize: '25pt',
-		},
-	}
-});
-
-const temaConteudo = createTheme({
-	typography: {
-		conteudo: {
-			fontSize: '25pt',
-		},
-	}
-});
 
 class Conteudo extends React.Component {
 	constructor(props) {
@@ -54,65 +29,92 @@ class Conteudo extends React.Component {
 
 	bgTopo () {
 		return (
-			<ThemeProvider theme={temaTopo}>
-				<Box sx={{ flexGrow: 1, mb: "20px" }}>
-					<Grid container spacing={5}>
-						<Grid item sm={12} md={6}>
-							<Typography variant="titulo" className="fontType-ExtraBold">Inovando com tecnologia para melhores negócios </Typography>
-							<p></p>
-						</Grid>
-						<Grid item sm={12} md={6}>
-							<video autoPlay muted src={animacao} width="95%"></video>
-						</Grid>
+			<Box sx={{ flexGrow: 1, mb: "20px" }}>
+				<Grid container spacing={5}>
+					<Grid item xm={12} sm={12} md={6} className="seMobileCentralizar">
+						<Typography variant="titulo">Inovando com tecnologia para melhores negócios </Typography><br />
+						<Typography variant="textoPrincipal" className="ocultarQuandoPequeno">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores. </Typography>
 					</Grid>
-				</Box>
-			</ThemeProvider>
+					<Grid item xm={12} sm={12} md={6} align="center">
+						<video autoPlay muted src={animacao} width="85%"></video>
+					</Grid>
+				</Grid>
+			</Box>
 		)
 	}
 	principaisProjetos () {
 		return (
-			<ThemeProvider theme={temaSecundario}>
-				<Box sx={{ mt: '30px', justifyContent:"center", display: 'flex'}}>
-					<Box sx={{ display: 'inline-block'}}>
-						<img width="80vw" className="" src={principaisProjetos}></img>
-					</Box>
-					<Box sx={{ display: 'inline-block', mt: '10px', ml: '20px'}}>
-						<Typography variant="titulo" >PRINCIPAIS</Typography> <br />
-						<Typography variant="titulo" className="fontType-ExtraBold">PROJETOS</Typography>
-					</Box>
+			<Box sx={{ mt: '30px', justifyContent:"center", display: 'flex'}}>
+				<Box sx={{ display: 'inline-block'}}>
+					<img width="80vw" className="" src={principaisProjetos}></img>
 				</Box>
-			</ThemeProvider>
+				<Box sx={{ display: 'inline-block', mt: '10px', ml: '20px'}}>
+					<Typography variant="subtitulo" >PRINCIPAIS</Typography> <br />
+					<Typography variant="subtituloBold">PROJETOS</Typography>
+				</Box>
+			</Box>
 		)
 	}
 	tiro () {
 		return (
-			<ThemeProvider theme={temaConteudo}>
-				<Box sx={{ flexGrow: 1, mb: "20px"}}>
-					<Grid container spacing={5}>
-						<Grid item sm={12} md={6}>
-							<img src={notebook} width="400px" align="right" loading="lazy"></img> 
-						</Grid>
-						<Grid item sm={12} md={6}>
-							<img src={tiroDigital} width="280vh"></img> 
-							<Typography>O tiro.digital surgiu no intuito de revolucionar o mundo do tiro. Com tecnologia de ponta para o controle e gestão de Clubes, lojas de armas, IATS e psicólogos. Tendo como principal objetivo de desburocratizar e automatizar os processos que envolvem o tiro no Brasil.</Typography>
-							<Button className='botaoPadrao' href="https://tiro.digital">Ver mais</Button>
-						</Grid>
+			<Box sx={{ flexGrow: 1, mb: "20px"}}>
+				<Grid container spacing={5}>
+					<Grid item sm={12} md={6}>
+						<img src={notebook} width="400px" align="right" loading="lazy"></img> 
 					</Grid>
-				</Box>
-			</ThemeProvider>
+					<Grid item sm={12} md={6} sx={{alignSelf: "center"}}>
+						<img src={tiroDigital} width="280vh"></img> <br />
+						<Typography variant="textoPrincipal">O tiro.digital surgiu no intuito de revolucionar o mundo do tiro. Com tecnologia de ponta para o controle e gestão de Clubes, lojas de armas, IATS e psicólogos. Tendo como principal objetivo de desburocratizar e automatizar os processos que envolvem o tiro no Brasil.</Typography> <br />
+						<Button className='botaoPadrao' href="https://tiro.digital" sx={{mt:"20px"}}>Ver mais</Button>
+					</Grid>
+				</Grid>
+			</Box>
 		)
 	}
-	SIM () {
+
+	tiroMobile () {
+		return (
+			<Box sx={{ flexGrow: 1, mb: "20px"}}>
+				<Grid container spacing={5} align="center">
+					<Grid item sm={12} md={6} sx={{alignSelf: "center"}}>
+						<img src={tiroDigital} width="280vh"></img> <br />
+						<Typography variant="textoPrincipal">O tiro.digital surgiu no intuito de revolucionar o mundo do tiro. Com tecnologia de ponta para o controle e gestão de Clubes, lojas de armas, IATS e psicólogos. Tendo como principal objetivo de desburocratizar e automatizar os processos que envolvem o tiro no Brasil.</Typography> <br />
+						<Button className='botaoPadrao' href="https://tiro.digital" sx={{mt:"20px"}}>Ver mais</Button>
+					</Grid>
+					<Grid item xs={12} sm={12} md={6}>
+						<img src={notebook} width="400px" align="center" loading="lazy"></img> 
+					</Grid>
+				</Grid>
+			</Box>
+		)
+	}
+	sim () {
 		return (
 			<Box sx={{ flexGrow: 1, mb: "20px" }}>
 				<Grid container spacing={5}>
-					<Grid item sm={12} md={6} align="right">
-						<img src={logoSIM} width="150vh"></img>
-						<Typography>O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography>
-						<Button className='botaoPadrao' href="https://sim.med.br">Ver mais</Button>
+					<Grid item sm={12} md={6} align="right"  sx={{alignSelf: "center"}}>
+						<img src={logoSIM} width="150vh"></img> <br />
+						<Typography variant="textoPrincipal">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography> <br />
+						<Button className='botaoPadrao' href="https://sim.med.br" sx={{mt:"20px"}}>Ver mais</Button>
 					</Grid>
 					<Grid item sm={12} md={6}>
 						<img src={telefoneSIM} width="250vh" loading="lazy"></img>
+					</Grid>
+				</Grid>
+			</Box>
+		)
+	}
+	simMobile () {
+		return (
+			<Box sx={{ flexGrow: 1, mb: "20px" }}>
+				<Grid container spacing={5} align="center">
+					<Grid item sm={12} md={6} align="center"  sx={{alignSelf: "center"}}>
+						<img src={logoSIM} width="150vh"></img> <br />
+						<Typography variant="textoPrincipal">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography> <br />
+						<Button className='botaoPadrao' href="https://sim.med.br" sx={{mt:"20px"}}>Ver mais</Button>
+					</Grid>
+					<Grid item xs={12} sm={12} md={6}>
+						<img src={telefoneSIM} width="250vh" align="center" loading="lazy"></img>
 					</Grid>
 				</Grid>
 			</Box>
@@ -122,14 +124,31 @@ class Conteudo extends React.Component {
 		return (
 			<Box sx={{ flexGrow: 1, mb: "20px" }}>
 				<Grid container spacing={5}>
-					<Grid item sm={12} md={6} align="right">
-						<img src={tabletDemocratize} width="70%" align="right" loading="lazy"></img>
+					<Grid item sm={12} md={6} align="right" >
+						<img src={tabletDemocratize} width="350vh" align="right" loading="lazy"></img>
 					</Grid>
-					<Grid item sm={12} md={6}>
-						<img src={logoDemocratize} width="70%"></img>
-						<Typography> O Democratize nasceu em 2018, época em que passou a ser permitido o Financiamento Coletivo para candidatos arrecadarem fundo para suas campanhas eleitorais. Crowdfunding Eleitoral é a nossa especialidade. Fizemos história e aprimoramos nossa plataforma para oferecer muito além da errecadação nas eleições.</Typography>
-						<Button className='botaoPadrao' href="https://democratize.com.br">Ver mais</Button>					
+					<Grid item sm={12} md={6} rowGap={5} sx={{alignSelf: "center"}}>
+						<img src={logoDemocratize} width="70%"></img> <br />
+						<Typography  variant="textoPrincipal"> O Democratize nasceu em 2018, época em que passou a ser permitido o Financiamento Coletivo para candidatos arrecadarem fundo para suas campanhas eleitorais. Crowdfunding Eleitoral é a nossa especialidade. Fizemos história e aprimoramos nossa plataforma para oferecer muito além da arrecadação nas eleições.</Typography> <br />
+						<Button className='botaoPadrao' href="https://democratize.com.br" sx={{mt:"20px"}}>Ver mais</Button>					
 					 </Grid>
+				</Grid>
+			</Box>
+		)
+	}
+
+	democratizeMobile () {
+		return (
+			<Box sx={{ flexGrow: 1, mb: "20px" }}>
+				<Grid container spacing={5} align="center">
+					<Grid item sm={12} md={6} rowGap={5} sx={{alignSelf: "center"}}>
+						<img src={logoDemocratize} width="380vh"></img> <br />
+						<Typography  variant="textoPrincipal"> O Democratize nasceu em 2018, época em que passou a ser permitido o Financiamento Coletivo para candidatos arrecadarem fundo para suas campanhas eleitorais. Crowdfunding Eleitoral é a nossa especialidade. Fizemos história e aprimoramos nossa plataforma para oferecer muito além da arrecadação nas eleições.</Typography> <br />
+						<Button className='botaoPadrao' href="https://democratize.com.br" sx={{mt:"20px"}}>Ver mais</Button>					
+					</Grid>
+					<Grid item xs={12} sm={12} md={6}>
+						<img src={tabletDemocratize} width="350vh" align="center" loading="lazy"></img>
+					</Grid>
 				</Grid>
 			</Box>
 		)
@@ -137,23 +156,34 @@ class Conteudo extends React.Component {
  
 	render () {
 		return (
-			<Container maxWidth="lg">
-				<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px' }}>
-					{this.bgTopo ()}
-				</Box>
-				<Box sx={{minHeight: '200px' }}>
-					{this.principaisProjetos ()}
-				</Box>
-				<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px', my: "5vh" }}>
-					{this.tiro ()}
-				</Box>
-				<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px', my: "5vh" }}>
-					{this.SIM ()}
-				</Box>
-				<Box sx={{minHeight: '300px' }}>
-					{this.democratize ()}
-				</Box>
-			</Container>
+			<ThemeProvider theme={tema}>
+				<Container maxWidth="lg">
+					<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px' }}>
+						{this.bgTopo ()}
+					</Box>
+					<Box sx={{minHeight: '200px' }}>
+						{this.principaisProjetos ()}
+					</Box>
+					<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px', my: "5vh" }} className="ocultarQuandoPequeno">
+						{this.tiro ()}
+					</Box>
+					<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px', my: "5vh" }} className="ocultarQuandoGrande">
+						{this.tiroMobile ()}
+					</Box>
+					<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px', my: "5vh" }} className="ocultarQuandoPequeno">
+						{this.sim ()}
+					</Box>
+					<Box sx={{borderBottom: '3px solid #efefef', minHeight: '300px', my: "5vh" }} className="ocultarQuandoGrande">
+						{this.simMobile ()}
+					</Box>
+					<Box sx={{minHeight: '300px' }} className="ocultarQuandoPequeno">
+						{this.democratize ()}
+					</Box>
+					<Box sx={{minHeight: '300px' }} className="ocultarQuandoGrande">
+						{this.democratizeMobile ()}
+					</Box>
+				</Container>
+			</ThemeProvider>
 		)
 	}
 }

@@ -9,13 +9,37 @@ import simposioICES from '../../imagens/EVENTOS/SIMPÓSIO_ICES.png'
 // Material UI
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { ThemeProvider } from '@mui/material/styles';
 
+// Tema
+import tema from '../Tema';
 
 // Carousel
-import Carousel from 'react-material-ui-carousel'
+import Carousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 
-
+const items = [
+	<Box sx={{mx: '20px', mt: '10px', display: 'inline-block', width: '350px'}} align= 'center'>
+		<img src={abor} role="presentation" width="95%" align="center"/> 
+		<Box sx={{ justifyContent:"center", display: 'flex'}}>
+			<Typography variant="textoPrincipal" >12º Congresso  Internacional ABOR</Typography>
+		</Box>
+	</Box>,
+	<Box sx={{mx: '20px', mt: '10px', display: 'inline-block', width: '350px'}}>
+		<img src={ortoPremium} role="presentation" width="95%" align="center" /> 
+		<Box sx={{ justifyContent:"center", display: 'flex'}}>
+			<Typography variant="textoPrincipal" >Simpósio ICES  UFRJ 50 anos</Typography>
+		</Box>
+	</Box>,
+	<Box sx={{mx: '20px', mt: '10px', display: 'inline-block', width: '350px'}}>
+		<img src={simposioICES}  role="presentation" width="95%" align="center" />
+		<Box sx={{ justifyContent:"center", display: 'flex'}}>
+			<Typography variant="textoPrincipal">Orto Premium Rio 2022</Typography>
+		</Box>
+	</Box>,
+]
 
 class CarouselPag extends React.Component {
 	constructor(props) {
@@ -26,54 +50,45 @@ class CarouselPag extends React.Component {
 	render () {
 
 		return (
-			<Container>
-					<Carousel>
-					</Carousel>
-			</Container>
+			<ThemeProvider theme={tema}>
+				<Container maxWidth="lg">
+					<Box sx={{ mt: '30px', justifyContent:"center", display: 'flex'}}>
+						<Box sx={{ display: 'inline-block'}}>
 
-			// <div className="container-lg my-3">
-			// 	<div id="mainSlider" className="carousel carousel-dark slide" data-ride="carousel">
-			// 		{/* <ol className="carousel-indicators">
-			// 			<li data-target="#mainSlider" data-alide-to="0" className="active"></li>
-			// 			<li data-target="#mainSlider" data-alide-to="1"></li>
-			// 			<li data-target="#mainSlider" data-alide-to="2"></li>
-			// 		</ol> */}
-			// 		<div className="carousel-inner">
-			// 			<div className="carousel-item active" align="center">
-			// 				<div className="d-inline-block">
-			// 					<img src={abor} className="w-50"/>
-			// 					<p className="fontType-Bold fs-6">
-			// 						12º Congresso <br /> Internacional ABOR
-			// 					</p>
-			// 				</div>
-			// 				<div className="d-inline-block">
-			// 					<img src={simposioICES} className="w-50"/>
-			// 					<p className="fontType-Bold fs-6">
-			// 						Simpósio ICES <br /> UFRJ 50 anos
-			// 					</p>
-			// 				</div>
-			// 			</div>
-			// 			{/* <div className="carousel-item">
-			// 			</div> */}
-			// 			<div className="carousel-item">
-			// 				<img src={ortoPremium} className="d-inline-block w-25"/>
-			// 				<div className="carousel-caption">
-			// 					<p className="fontType-Bold fs-6">
-			// 						Orto Premium <br />Rio 2022
-			// 					</p>
-			// 				</div>
-			// 			</div>
-			// 			<a href="#mainSlider" className="carousel-control-prev" role="button" data-slide="prev">
-			// 				<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-			// 				<span className="sr-only"></span>
-			// 			</a>
-			// 			<a href="#mainSlider" className="carousel-control-next" role="button" data-slide="next">
-			// 				<span className="carousel-control-next-icon" aria-hidden="true"></span>
-			// 				<span className="sr-only"></span>
-			// 			</a>
-			// 		</div>
-			// 	</div>
-			// </div>
+							<img src={iconEvento} width="100vw" />
+						</Box>
+						<Box sx={{ display: 'inline-block', ml: '10px'}}>
+							<Typography variant="subtitulo">EVENTOS</Typography> <br />
+							<Typography variant="subtituloBold">FÍSICOS E DIGITAIS</Typography>
+						</Box>
+					</Box>
+					<Box sx={{ justifyContent:"center", display: 'flex', mb: "20px"}}>
+						<Typography variant="textoPrincipal" >Soluções para o sucesso do seu evento</Typography>
+					</Box>
+
+					<Box align="center" sx={{mb: "20px"}}>
+						<Carousel 
+							mouseTracking 
+							autoWidth 
+							autoPlay
+							// autoPlayControls
+							autoPlayStrategy="none"
+							autoPlayInterval={1500}
+							animationDuration={2500}
+							animationType="fadeout"
+							infinite
+							touchTracking={false}
+							disableDotsControls
+							disableButtonsControls
+							items={items}
+							paddingLeft={75}
+							paddingRight={75}
+							
+						/>
+					</Box>
+						
+				</Container>
+			</ThemeProvider>
 		)
 	}
 }

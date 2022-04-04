@@ -13,14 +13,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme({
   typography: {
     fontFamily: 'Montserrat, sans-serif',
-    palette: {
-      primary: {
-        main: '#383330',
-      },
-      secondary: {
-        main: '#e5b54a'
-      }
-    }
   },
   components: {
     MuiCssBaseline: {
@@ -48,7 +40,7 @@ function Home() {
 
           </Container>
           <ConteudoAux />
-          {/* <CarouselPag /> */}
+          <CarouselPag />
         </main>
         <footer>
           <Rodape />
