@@ -28,7 +28,7 @@ class ConteudoAux extends React.Component {
 			<ThemeProvider theme={tema}>
 				<Box sx={{bgcolor: '#efefef', p: '30px'}}>
 					<Container maxWidth='lg'>
-						<Grid container  align="center">
+						<Grid container align="center"  alignItems="center">
 							<Grid item xs={12} sm={12} md={6} sx={{mb: "10px"}}>
 								<img src={nossosClientes} width="120vh"></img> <br />
 								<Typography variant="subtitulo">NOSSOS</Typography> <br />
