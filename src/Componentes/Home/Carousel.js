@@ -21,21 +21,21 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 
 const items = [
-	<Box sx={{mx: '20px', mt: '10px', display: 'inline-block', width: '350px'}} align= 'center'>
+	<Box sx={{mt: '10px', display: 'inline-block', width: '350px'}} align= 'center'>
 		<img src={abor} role="presentation" width="95%" align="center"/> 
 		<Box sx={{ justifyContent:"center", display: 'flex'}}>
-			<Typography variant="textoPrincipal" >12º Congresso  Internacional ABOR</Typography>
+			<Typography variant="textoPrincipal" >12º Congresso Internacional ABOR</Typography>
 		</Box>
 	</Box>,
-	<Box sx={{mx: '20px', mt: '10px', display: 'inline-block', width: '350px'}}>
+	<Box sx={{mt: '10px', display: 'inline-block', width: '350px'}}>
 		<img src={ortoPremium} role="presentation" width="95%" align="center" /> 
 		<Box sx={{ justifyContent:"center", display: 'flex'}}>
-			<Typography variant="textoPrincipal" >Simpósio ICES  UFRJ 50 anos</Typography>
+			<Typography variant="textoPrincipal" >Simpósio ICES UFRJ 50 anos</Typography>
 		</Box>
 	</Box>,
-	<Box sx={{mx: '20px', mt: '10px', display: 'inline-block', width: '350px'}}>
+	<Box sx={{mt: '10px', display: 'inline-block', width: '350px'}}>
 		<img src={simposioICES}  role="presentation" width="95%" align="center" />
-		<Box sx={{ justifyContent:"center", display: 'flex'}}>
+		<Box sx={{ justifyContent:"center", display: 'flex'}} align="center">
 			<Typography variant="textoPrincipal">Orto Premium Rio 2022</Typography>
 		</Box>
 	</Box>,
@@ -73,7 +73,7 @@ class CarouselPag extends React.Component {
 							autoPlay
 							// autoPlayControls
 							autoPlayStrategy="none"
-							autoPlayInterval={1500}
+							autoPlayInterval={2000}
 							animationDuration={2500}
 							animationType="fadeout"
 							infinite
