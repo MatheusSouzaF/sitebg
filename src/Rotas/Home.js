@@ -2,12 +2,13 @@ import '../site.css';
 import Topo from '../Componentes/Topo'
 import Conteudo from '../Componentes/Home/Conteudo'
 import ConteudoAux from '../Componentes/Home/ConteudoAux'
-import Carousel from '../Componentes/Home/Carousel'
+import CarouselPag from '../Componentes/Home/Carousel'
 import Rodape from '../Componentes/Rodape'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Montserrat from '../Fontes/Montserrat-Regular_0.ttf'
 import CssBaseline from '@mui/material/CssBaseline';
+
 
 const theme = createTheme({
   typography: {
@@ -47,7 +48,7 @@ function Home() {
 
           </Container>
           <ConteudoAux />
-          <Carousel />
+          {/* <CarouselPag /> */}
         </main>
         <footer>
           <Rodape />
@@ -56,4 +57,4 @@ function Home() {
   );
 }
 
-export default Home;
+ export default Home;
