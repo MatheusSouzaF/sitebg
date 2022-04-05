@@ -1,4 +1,3 @@
-import React from 'react'
 
 // Material UI
 import { createTheme } from '@mui/material/styles';
