@@ -7,7 +7,9 @@ import notebook from '../../imagens/NOTEBOOK_TIRO.png'
 import tiroDigital from '../../imagens/LOGO_TIRO.png'
 import logoSIM from '../../imagens/LOGO_SIM.png'
 import telefoneSIM from '../../imagens/TELEFONE_SIM.png'
+import telefoneSIMMobile from '../../imagens/TELEFONE_SIM_v2.png'
 import tabletDemocratize from '../../imagens/TABLET_DEMOCRATIZE.png'
+import tabletDemocratizeMobile from '../../imagens/TABLET_DEMOCRATIZE_v2.png'
 import logoDemocratize from '../../imagens/LOGO_DEMOCRATIZE.png'
 
 //Material UI
@@ -31,12 +33,13 @@ class Conteudo extends React.Component {
 		return (
 			<Box sx={{ flexGrow: 1, mb: "20px" }}>
 				<Grid container spacing={5}>
-					<Grid item xm={12} sm={12} md={6} className="seMobileCentralizar">
+					<Grid item xm={12} sm={12} md={5} className="seMobileCentralizarTexto">
 						<Typography variant="titulo">Inovando com tecnologia para melhores negócios </Typography><br />
-						<Typography variant="textoPrincipal" className="ocultarQuandoPequeno">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores. </Typography>
+						<Typography variant="textoPrincipal" className="ocultarQuandoPequeno">Conheça nossas soluções projetadas para o melhor controle dos seus processos. Desfrute de um sistema integrado com tecnologia de ponta e usabilidade 360°.</Typography>
 					</Grid>
-					<Grid item xm={12} sm={12} md={6} align="center">
-						<video autoPlay muted src={animacao} width="85%"></video>
+					<Grid item xm={12} sm={12} md={7} align="center" sx={{alignSelf: "center"}}>
+						<video autoPlay muted src={animacao} width="95%"></video> <br />
+						<Typography variant="textoPrincipal" className="ocultarQuandoGrande">Conheça nossas soluções projetadas para o melhor controle dos seus processos. Desfrute de um sistema integrado com tecnologia de ponta e usabilidade 360°. </Typography>
 					</Grid>
 				</Grid>
 			</Box>
@@ -94,11 +97,11 @@ class Conteudo extends React.Component {
 				<Grid container spacing={5}>
 					<Grid item sm={12} md={6} align="right"  sx={{alignSelf: "center"}}>
 						<img src={logoSIM} width="150vh"></img> <br />
-						<Typography variant="textoPrincipal">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography> <br />
+						<Typography variant="textoPrincipal">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviços prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography> <br />
 						<Button className='botaoPadrao' href="https://sim.med.br" sx={{mt:"20px"}}>Ver mais</Button>
 					</Grid>
 					<Grid item sm={12} md={6}>
-						<img src={telefoneSIM} width="250vh" loading="lazy"></img>
+						<img src={telefoneSIM} width="300px" loading="lazy"></img>
 					</Grid>
 				</Grid>
 			</Box>
@@ -110,11 +113,11 @@ class Conteudo extends React.Component {
 				<Grid container spacing={5} align="center">
 					<Grid item sm={12} md={6} align="center"  sx={{alignSelf: "center"}}>
 						<img src={logoSIM} width="150vh"></img> <br />
-						<Typography variant="textoPrincipal">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviçõs prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography> <br />
+						<Typography variant="textoPrincipal">O SIM é um software em gestão de saúde pública focado na humanização do atendimento e melhorias nos serviços prestados. Informatizando processos como agendamento de consultas, regulação de procedimentos e exames, automatização do faturamento, prontuário eletrônico do paciente, entre outros, temos como objetivos oferecer um melhor atendimento a população em geral, e, em conjunto entregar as informações mais importantes para as tomadas de decisões corretas por parte dos gestores.</Typography> <br />
 						<Button className='botaoPadrao' href="https://sim.med.br" sx={{mt:"20px"}}>Ver mais</Button>
 					</Grid>
 					<Grid item xs={12} sm={12} md={6}>
-						<img src={telefoneSIM} width="250vh" align="center" loading="lazy"></img>
+						<img src={telefoneSIMMobile} width="250vh" align="center" loading="lazy"></img>
 					</Grid>
 				</Grid>
 			</Box>
@@ -147,7 +150,7 @@ class Conteudo extends React.Component {
 						<Button className='botaoPadrao' href="https://democratize.com.br" sx={{mt:"20px"}}>Ver mais</Button>					
 					</Grid>
 					<Grid item xs={12} sm={12} md={6}>
-						<img src={tabletDemocratize} width="350vh" align="center" loading="lazy"></img>
+						<img src={tabletDemocratizeMobile} width="350vh" align="center" loading="lazy"></img>
 					</Grid>
 				</Grid>
 			</Box>

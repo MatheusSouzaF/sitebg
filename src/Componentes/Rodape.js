@@ -33,20 +33,33 @@ class Rodape extends React.Component {
 									<img src={logoBranco} width="200vh" justify="center"></img>
 								</Box>
 							</Grid>
-							<Grid item sm={4} md={3} className="seMobileCentralizar">
-								<Box  sx={{ borderRight: 1, boderColor: '#ffffff', px:'4vw', height: '110px', pt: '20px'}}>
+							<Grid item xs={12} sm={12} md={3}>
+								<Box  sx={{ borderRight: 1, boderColor: '#ffffff', px:'4vw', height: '110px', pt: '20px'}} className="ocultarQuandoPequeno">
+									<a href="https://tiro.digital"			className="link-branco">Tiro Digital</a><br />
+									<a href="https://sim.med.br" 			className="link-branco">SIM			</a><br />
+									<a href="https://democratize.com.br" 	className="link-branco">Democratize	</a>
+								</Box>
+								<Box  sx={{ px:'4vw', pt: '20px', mt: '20px'}} className="ocultarQuandoGrande seMobileCentralizarTexto" >
 									<a href="https://tiro.digital"			className="link-branco">Tiro Digital</a><br />
 									<a href="https://sim.med.br" 			className="link-branco">SIM			</a><br />
 									<a href="https://democratize.com.br" 	className="link-branco">Democratize	</a>
 								</Box>
 							</Grid>
-							<Grid item sm={8} md={5} className="seMobileCentralizar">
-								<Box  sx={{px:'4vw', my: '7vh', height: '110px', pt: '10px'}}>
+							<Grid item xs={12} sm={12} md={5}>
+								<Box  sx={{px:'4vw', my: '7vh', height: '110px', pt: '10px'}} className="ocultarQuandoPequeno">
 									<Typography variant='rodape'>
 										Avenida Getúlio Vargas, 221 - Sala 703 <br />
 										Centro - Araruama | CEP: 28979-129 <br />
 										contato@bgstudios.com.br <br />
 										(22) 2661-5889
+									</Typography>
+								</Box>
+								<Box  sx={{ px:'4vw', my: '20px', height: '110px', pt: '20px'}} className="ocultarQuandoGrande seMobileCentralizarTexto">
+									<Typography variant='rodape'>
+										Avenida Getúlio Vargas, 221 - Sala 703 <br />
+										Centro - Araruama | CEP: 28979-129 <br />
+										contato@bgstudios.com.br <br />
+										+55 (11) 3136-1448
 									</Typography>
 								</Box>
 							</Grid>

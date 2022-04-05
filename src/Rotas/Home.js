@@ -4,49 +4,26 @@ import Conteudo from '../Componentes/Home/Conteudo'
 import ConteudoAux from '../Componentes/Home/ConteudoAux'
 import CarouselPag from '../Componentes/Home/Carousel'
 import Rodape from '../Componentes/Rodape'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
-import Montserrat from '../Fontes/Montserrat-Regular_0.ttf'
 import CssBaseline from '@mui/material/CssBaseline';
+import tema from '../Componentes/Tema'
 
 
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Montserrat, sans-serif',
-  },
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: `
-        @font-face {
-          font-family: 'Montserrat';
-          font-style: normal;
-          src: "local('Montserrat'), url(${Montserrat});
-        }
-      `,
-    }
-  }
-});
 
 function Home() {
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-        <header>
-          <Topo />
-        </header>
-        <main>
-          <Container maxWidth='xl'>
-            <Conteudo />
-
-          </Container>
-          <ConteudoAux />
-          <CarouselPag />
-        </main>
-        <footer>
-          <Rodape />
-        </footer>
+  	return (
+    <ThemeProvider theme={tema}>
+      	<CssBaseline />
+        <Topo />
+		<Container maxWidth='xl'>
+			<Conteudo />
+		</Container>
+        <ConteudoAux />
+        <CarouselPag />
+        <Rodape />
     </ThemeProvider>
-  );
+  	);
 }
 
  export default Home;

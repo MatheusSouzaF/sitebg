@@ -21,22 +21,22 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 
 const items = [
-	<Box sx={{mt: '10px', display: 'inline-block', width: '350px'}} align= 'center'>
+	<Box sx={{mt: '10px', display: 'inline-block', width: '350px', px:'25px'}} align= 'center'>
 		<img src={abor} role="presentation" width="95%" align="center"/> 
-		<Box sx={{ justifyContent:"center", display: 'flex'}}>
-			<Typography variant="textoPrincipal" >12º Congresso Internacional ABOR</Typography>
+		<Box sx={{ justifyContent:"center", display: 'flex', px: '20px', mt: '20px'}}>
+			<Typography variant="subtituloBoldPequeno" align="center">12º Congresso Internacional ABOR</Typography>
 		</Box>
 	</Box>,
-	<Box sx={{mt: '10px', display: 'inline-block', width: '350px'}}>
+	<Box sx={{mt: '10px', display: 'inline-block', width: '350px', px:'25px'}} align= 'center'>
 		<img src={ortoPremium} role="presentation" width="95%" align="center" /> 
-		<Box sx={{ justifyContent:"center", display: 'flex'}}>
-			<Typography variant="textoPrincipal" >Simpósio ICES UFRJ 50 anos</Typography>
+		<Box sx={{ justifyContent:"center", display: 'flex', px: '20px',  mt: '20px'}}>
+			<Typography variant="subtituloBoldPequeno" align="center">Simpósio ICES UFRJ 50 anos</Typography>
 		</Box>
 	</Box>,
-	<Box sx={{mt: '10px', display: 'inline-block', width: '350px'}}>
+	<Box sx={{mt: '10px', display: 'inline-block', width: '350px', px:'25px'}} align= 'center'>
 		<img src={simposioICES}  role="presentation" width="95%" align="center" />
-		<Box sx={{ justifyContent:"center", display: 'flex'}} align="center">
-			<Typography variant="textoPrincipal">Orto Premium Rio 2022</Typography>
+		<Box sx={{ justifyContent:"center", display: 'flex', px: '20px', mt: '20px'}} align="center">
+			<Typography variant="subtituloBoldPequeno" align="center">Orto Premium Rio 2022</Typography>
 		</Box>
 	</Box>,
 ]
@@ -66,12 +66,11 @@ class CarouselPag extends React.Component {
 						<Typography variant="textoPrincipal" >Soluções para o sucesso do seu evento</Typography>
 					</Box>
 
-					<Box align="center" sx={{mb: "20px"}}>
+					<Box align="center" sx={{mb: "50px"}}>
 						<Carousel 
 							mouseTracking 
 							autoWidth 
 							autoPlay
-							// autoPlayControls
 							autoPlayStrategy="none"
 							autoPlayInterval={2000}
 							animationDuration={2500}
@@ -81,9 +80,6 @@ class CarouselPag extends React.Component {
 							disableDotsControls
 							disableButtonsControls
 							items={items}
-							paddingLeft={75}
-							paddingRight={75}
-							
 						/>
 					</Box>
 						

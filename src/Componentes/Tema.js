@@ -17,6 +17,10 @@ const temaPrincipal = createTheme({
 		fontSize: 33,
 		fontFamily: 'Montserrat-Bold, sans-serif'
 	  },
+	  subtituloBoldPequeno: {
+		fontSize: 20,
+		fontFamily: 'Montserrat-Bold, sans-serif'
+	  },
 	  textoPrincipal: {
 		fontSize: 18,
 		fontFamily: 'Montserrat, sans-serif'

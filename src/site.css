@@ -37,12 +37,13 @@
 @media(max-width: 900px ) {
 	.ocultarQuandoPequeno {
 		display: none;
-		
 	}
 	.seMobileCentralizar {
-		text-align: center !important;
 		align-self: center !important;
 		align-content: center !important;
+	}
+	.seMobileCentralizarTexto {
+		text-align: center !important;
 	}
 }
 
