@@ -12,7 +12,7 @@ class Topo extends React.Component {
 		return (
 			<Box display="flex" justifyContent="center" sx={{ bgcolor: '#ffffff', my: '40px'}}>	
 				<Link to="/">
-					<img src={logo} width="250px" align="center"></img>
+					<img src={logo} width="250px" align="center" alt="Logo BG"></img>
 				</Link>
 			</Box>
 		)

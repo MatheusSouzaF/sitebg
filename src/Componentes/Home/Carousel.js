@@ -22,19 +22,19 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const items = [
 	<Box sx={{mt: '10px', display: 'inline-block', width: '350px', px:'25px'}} align= 'center'>
-		<img src={abor} role="presentation" width="95%" align="center"/> 
+		<img src={abor} role="presentation" width="95%" align="center" alt="ABOR"/> 
 		<Box sx={{ justifyContent:"center", display: 'flex', px: '20px', mt: '20px'}}>
 			<Typography variant="subtituloBoldPequeno" align="center">12º Congresso Internacional ABOR</Typography>
 		</Box>
 	</Box>,
 	<Box sx={{mt: '10px', display: 'inline-block', width: '350px', px:'25px'}} align= 'center'>
-		<img src={ortoPremium} role="presentation" width="95%" align="center" /> 
+		<img src={simposioICES} role="presentation" width="95%" align="center" alt="Simposio ICES" /> 
 		<Box sx={{ justifyContent:"center", display: 'flex', px: '20px',  mt: '20px'}}>
 			<Typography variant="subtituloBoldPequeno" align="center">Simpósio ICES UFRJ 50 anos</Typography>
 		</Box>
 	</Box>,
 	<Box sx={{mt: '10px', display: 'inline-block', width: '350px', px:'25px'}} align= 'center'>
-		<img src={simposioICES}  role="presentation" width="95%" align="center" />
+		<img src={ortoPremium}  role="presentation" width="95%" align="center" alt="Orto Premium" />
 		<Box sx={{ justifyContent:"center", display: 'flex', px: '20px', mt: '20px'}} align="center">
 			<Typography variant="subtituloBoldPequeno" align="center">Orto Premium Rio 2022</Typography>
 		</Box>
@@ -42,10 +42,6 @@ const items = [
 ]
 
 class CarouselPag extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 
 	render () {
 
@@ -55,7 +51,7 @@ class CarouselPag extends React.Component {
 					<Box sx={{ mt: '30px', justifyContent:"center", display: 'flex'}}>
 						<Box sx={{ display: 'inline-block'}}>
 
-							<img src={iconEvento} width="100vw" />
+							<img src={iconEvento} width="100vw" alt="Icone Evento"/>
 						</Box>
 						<Box sx={{ display: 'inline-block', ml: '10px'}}>
 							<Typography variant="subtitulo">EVENTOS</Typography> <br />

@@ -24,13 +24,13 @@ class Rodape extends React.Component {
 						<Grid container justifyContent="center" alignItems="center">
 							<Grid item md={4} className="ocultarQuandoPequeno">
 								<Box sx={{ borderRight: 1, boderColor: '#ffffff', px:'3vw', height: '110px', pt: '30px', justifyContent: "center"}}>
-									<img src={logoBranco} width="200vh" justify="center"></img>
+									<img src={logoBranco} width="200vh" justify="center" alt="Logo BG"></img>
 								</Box>
 
 							</Grid>
 							<Grid item xs={12} sm={12} md={4} align="center" className="ocultarQuandoGrande" >
 								<Box sx={{ px:'3vw', pt: '30px', justifyContent: "center"}}>
-									<img src={logoBranco} width="200vh" justify="center"></img>
+									<img src={logoBranco} width="200vh" justify="center" alt="Logo BG"></img>
 								</Box>
 							</Grid>
 							<Grid item xs={12} sm={12} md={3}>
