@@ -9,8 +9,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 // Tema
 import tema from './Tema';
