@@ -2,6 +2,7 @@ import React from 'react'
 
 // Imagens e animação
 import animacao from '../../imagens/ANIMACAO/DISPOSITIVOS.mp4';
+import animacaoMobile from '../../imagens/ANIMACAO/DISPOSITIVOS_MOBILE.gif';
 import principaisProjetos from '../../imagens/ICON_PRINCIPAIS PROJETOS.png'
 import notebook from '../../imagens/NOTEBOOK_TIRO.png'
 import tiroDigital from '../../imagens/LOGO_TIRO.png'
@@ -36,7 +37,8 @@ class Conteudo extends React.Component {
 						<Typography variant="textoPrincipal" className="ocultarQuandoPequeno">Conheça nossas soluções projetadas para o melhor controle dos seus processos. Desfrute de um sistema integrado com tecnologia de ponta e usabilidade 360°.</Typography>
 					</Grid>
 					<Grid item xm={12} sm={12} md={7} align="center" sx={{alignSelf: "center"}}>
-						<video autoPlay muted src={animacao} width="95%"></video> <br />
+						<video autoPlay muted src={animacao} width="95%" className="ocultarQuandoPequeno"></video> <br />
+						<img  src={animacaoMobile} alt="Animação" width="95%" className="ocultarQuandoGrande"></img>
 						<Typography variant="textoPrincipal" className="ocultarQuandoGrande">Conheça nossas soluções projetadas para o melhor controle dos seus processos. Desfrute de um sistema integrado com tecnologia de ponta e usabilidade 360°. </Typography>
 					</Grid>
 				</Grid>
