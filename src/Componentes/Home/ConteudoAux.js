@@ -30,28 +30,29 @@ class ConteudoAux extends React.Component {
 					<Container maxWidth='lg'>
 						<Grid container align="center"  alignItems="center">
 							<Grid item xs={12} sm={12} md={6} sx={{mb: "10px"}}>
-								<img src={nossosClientes} width="120vh" alt="Alguns Clientes"></img> <br />
+								<img src={nossosClientes} maxwidth="100px" width="25%" alt="Alguns Clientes" className="ocultarQuandoPequeno"></img> <br />
+								<img src={nossosClientes} maxwidth="100px" width="130px" alt="Alguns Clientes" className="ocultarQuandoGrande"></img> <br />
 								<Typography variant="subtitulo">ALGUNS</Typography> <br />
 								<Typography variant="subtituloBold">CLIENTES</Typography>
 							</Grid>
 							<Grid item container xs={12} sm={12} md={6} spacing={1}>
-								<Grid item sm={4} md={4}>
-									<img src={abor} width='140vh' alt="ABOR"></img>
+								<Grid item xs={6} sm={4} md={4}>
+									<img src={abor} maxwidth="100px" width="80%" alt="ABOR"></img>
 								</Grid>
-								<Grid item sm={4} md={4}>
-									<img src={bbo} width='140vh' alt="BBO"></img>
+								<Grid item xs={6} sm={4} md={4}>
+									<img src={bbo} maxwidth="100px" width="80%"  alt="BBO"></img>
 								</Grid>
-								<Grid item sm={4} md={4}>
-									<img src={redeBellas} width='140vh' alt="Rede Bellas"></img>
+								<Grid item xs={6} sm={4} md={4}>
+									<img src={redeBellas} maxwidth="100px" width="80%"  alt="Rede Bellas"></img>
 								</Grid>
-								<Grid item sm={4} md={4}>
-									<img src={cdBbo} width='140vh' alt="CDBBO"></img>
+								<Grid item xs={6} sm={4} md={4}>
+									<img src={cdBbo} maxwidth="100px" width="80%"  alt="CDBBO"></img>
 								</Grid>
-								<Grid item sm={4} md={4}>
-									<img src={topClube} width='140vh' alt="Top Clube"></img>
+								<Grid item xs={6} sm={4} md={4}>
+									<img src={topClube} maxwidth="100px" width="80%"  alt="Top Clube"></img>
 								</Grid>
-								<Grid item sm={4} md={4}>
-									<img src={socinal} width='140vh' alt="SOCINAL"></img>
+								<Grid item xs={6} sm={4} md={4}>
+									<img src={socinal} maxwidth="100px" width="80%"  alt="SOCINAL"></img>
 								</Grid>
 							</Grid>
 						</Grid>

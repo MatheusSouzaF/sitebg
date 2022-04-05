@@ -5,7 +5,11 @@ import { createTheme } from '@mui/material/styles';
 const temaPrincipal = createTheme({
 	typography: {
 	  titulo: {
-		fontSize: 45,
+		fontSize: '3rem',
+		fontFamily: 'Montserrat-ExtraBold, sans-serif',
+	  },
+	  tituloMenor: {
+		fontSize: 32,
 		fontFamily: 'Montserrat-ExtraBold, sans-serif',
 	  },
 	  subtitulo: {
@@ -21,7 +25,7 @@ const temaPrincipal = createTheme({
 		fontFamily: 'Montserrat-Bold, sans-serif'
 	  },
 	  textoPrincipal: {
-		fontSize: 18,
+		fontSize: '1rem',
 		fontFamily: 'Montserrat, sans-serif'
 	  },
 	  rodape : {

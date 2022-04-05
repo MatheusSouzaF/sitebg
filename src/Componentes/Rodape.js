@@ -9,6 +9,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 // Tema
 import tema from './Tema';
@@ -39,27 +41,27 @@ class Rodape extends React.Component {
 									<a href="https://sim.med.br" 			className="link-branco">SIM			</a><br />
 									<a href="https://democratize.com.br" 	className="link-branco">Democratize	</a>
 								</Box>
-								<Box  sx={{ px:'4vw', pt: '20px', mt: '20px'}} className="ocultarQuandoGrande seMobileCentralizarTexto" >
+								{/* <Box  sx={{ px:'4vw', pt: '20px', mt: '20px'}} className="ocultarQuandoGrande seMobileCentralizarTexto" >
 									<a href="https://tiro.digital"			className="link-branco">Tiro Digital</a><br />
 									<a href="https://sim.med.br" 			className="link-branco">SIM			</a><br />
 									<a href="https://democratize.com.br" 	className="link-branco">Democratize	</a>
-								</Box>
+								</Box> */}
 							</Grid>
 							<Grid item xs={12} sm={12} md={5}>
 								<Box  sx={{px:'4vw', my: '7vh', height: '110px', pt: '10px'}} className="ocultarQuandoPequeno">
 									<Typography variant='rodape'>
 										Avenida Getúlio Vargas, 221 - Sala 703 <br />
 										Centro - Araruama | CEP: 28979-129 <br />
-										contato@bgstudios.com.br <br />
-										(22) 2661-5889
+										<a href="mailto:contato@bgstudios.com.br" 	className="link-branco">contato@bgstudios.com.br</a> <br />
+										<a href="https://api.whatsapp.com/send?phone=+551131361448" 	className="link-branco">+55 (11) 3136-1448</a>
 									</Typography>
 								</Box>
-								<Box  sx={{ px:'4vw', my: '20px', height: '110px', pt: '20px'}} className="ocultarQuandoGrande seMobileCentralizarTexto">
+								<Box  sx={{ px:'4vw', my: '20px', height: '110px', pt: '20px', mb: '40px', alignItems:"center"}} className="ocultarQuandoGrande seMobileCentralizarTexto">
 									<Typography variant='rodape'>
 										Avenida Getúlio Vargas, 221 - Sala 703 <br />
 										Centro - Araruama | CEP: 28979-129 <br />
-										contato@bgstudios.com.br <br />
-										+55 (11) 3136-1448
+										<a href="mailto:contato@bgstudios.com.br" 	className="link-branco">contato@bgstudios.com.br </a><MailOutlineIcon /> <br />
+										<a href="https://api.whatsapp.com/send?phone=+551131361448" 	className="link-branco">+55 (11) 3136-1448 </a><WhatsAppIcon />
 									</Typography>
 								</Box>
 							</Grid>

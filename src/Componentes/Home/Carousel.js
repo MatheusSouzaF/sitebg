@@ -48,16 +48,26 @@ class CarouselPag extends React.Component {
 		return (
 			<ThemeProvider theme={tema}>
 				<Container maxWidth="lg">
-					<Box sx={{ mt: '30px', justifyContent:"center", display: 'flex'}}>
-						<Box sx={{ display: 'inline-block'}}>
-
-							<img src={iconEvento} width="100vw" alt="Icone Evento"/>
+					<div className="ocultarQuandoPequeno">
+						<Box sx={{ mt: '30px', justifyContent:"center", display: 'flex'}}>
+							<Box sx={{ display: 'inline-block'}}>
+								<img src={iconEvento} width="100vw" alt="Icone Evento"/>
+							</Box>
+							<Box sx={{ display: 'inline-block', ml: '10px'}}>
+								<Typography variant="subtitulo">EVENTOS</Typography> <br />
+								<Typography variant="subtituloBold">FÍSICOS E DIGITAIS</Typography>
+							</Box>
 						</Box>
-						<Box sx={{ display: 'inline-block', ml: '10px'}}>
+					</div>
+					<div className="ocultarQuandoGrande">
+						<Box sx={{mt: '30px', justifyContent:"center", display: 'flex'}}>
+							<img src={iconEvento} width="100vw" align="center" alt="Icone Evento"/>
+						</Box>
+						<Box sx={{mt: '10px'}} className="seMobileCentralizarTexto">
 							<Typography variant="subtitulo">EVENTOS</Typography> <br />
 							<Typography variant="subtituloBold">FÍSICOS E DIGITAIS</Typography>
 						</Box>
-					</Box>
+					</div>
 					<Box sx={{ justifyContent:"center", display: 'flex', mb: "20px"}}>
 						<Typography variant="textoPrincipal" >Soluções para o sucesso do seu evento</Typography>
 					</Box>
