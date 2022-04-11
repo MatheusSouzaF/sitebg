@@ -28,7 +28,7 @@ Para desenvolver o site foi utilizado o *React 18*. O React 18 necessita que o N
 
 # Para verificar a versão do Node e caso necessário, fazer atualização:
 
-Verifica a versão do Node:
+Verificar a versão do Node:
 ### `node --version`
 
 Para fazer a atualização e verificar as versões disponíveis do Node, é necessário instalar o NVM. 
@@ -44,3 +44,12 @@ Perguntando ao NVM quais versões do Node estão disponíveis:
 
 É uma lista muito longa! Instale uma versão do Node digitando qualquer uma das versões que estiver vendo. Por exemplo, para obter a versão v17.8.0, digite:
 ### `nvm install v17.8.0`
+
+
+# Tambem estão disponiveis o *nvm list* e o *nvm use v...*.
+
+Para listar as versões do node instaladas na sua maquina:
+### `nvm list`
+
+Para utilizar uma versão do node ja instalada na sua maquina, por exemplo a versão v17.8.0:
+### `nvm use v17.8.0`
